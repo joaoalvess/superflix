@@ -1,18 +1,10 @@
-import {
-  BrowserRouter as Router,
+import { BrowserRouter as Router } from 'react-router-dom';
 
-} from "react-router-dom";
-
-import Auth from "./auth.routes";
-import Session from "./session.routes";
-
+import Auth from './auth.routes';
+import Session from './session.routes';
 
 export default function Routes() {
-  const login = true
+  const login = false;
 
-  return(
-    <Router>
-      {login ? <Session /> : <Auth />}
-    </Router>
-  )
+  return <Router>{login ? <Session /> : <Auth />}</Router>;
 }

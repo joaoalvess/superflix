@@ -1,16 +1,13 @@
-import {
-  Switch,
-  Route,
-} from "react-router-dom";
+import { Switch, Route } from 'react-router-dom';
 
-import Login from "../pages/Login";
+import Login from '../pages/Login';
 
 export default function Auth() {
-  return(
+  return (
     <Switch>
       <Route exact path="/">
         <Login />
       </Route>
     </Switch>
-  )
+  );
 }

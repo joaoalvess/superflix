@@ -1,13 +1,9 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import SignIn from './components/Templates/SignIn';
 
 const Login: React.FC = () => {
-  return (
-    <div>
-      <h1>auth</h1>
-    </div>
-  );
+  return <SignIn />;
 };
 
 export default Login;
